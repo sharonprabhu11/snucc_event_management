@@ -1,0 +1,1 @@
+# snucc_event_management
