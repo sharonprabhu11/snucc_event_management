@@ -18,10 +18,12 @@
     "phone": "+91-8657775136",
     "role": "Attendee",
     "unique_id": "4971b372-8d8a-4dc3-906b-623e9b4bac4a",
-    "check_in_status": false,
-    "lunch_collected": [],
+    "check_in_status": true,
+    "lunch_collected": [
+      "2025-05-11"
+    ],
     "kit_collected": false,
-    "registration_time": null
+    "registration_time": "2025-05-11 17:45:11.447623"
   },
   "e98325c4-80ed-4040-9866-e6368132f703": {
     "name": "Kabir Gupta",
