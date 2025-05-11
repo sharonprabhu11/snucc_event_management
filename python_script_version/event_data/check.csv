@@ -1,0 +1,29 @@
+Name,Email,Phone,Role,Unique ID,Checked In,Registration Time,Lunch Dates,Kit Collected
+Meera Chopra,meera.chopra@example.com,+91-8720078900,Attendee,8e317ae2-c35f-4ebf-8a76-c92911c79d43,Yes,2025-05-11 08:54:39.596254,2025-05-11,No
+Meera Singh,meera.singh@example.com,+91-8657775136,Attendee,4971b372-8d8a-4dc3-906b-623e9b4bac4a,No,,,No
+Kabir Gupta,kabir.gupta@example.com,+91-7987222824,Speaker,e98325c4-80ed-4040-9866-e6368132f703,No,,,No
+Arjun Reddy,arjun.reddy@example.com,+91-8572751860,Attendee,439257a9-5a22-4ec3-9a95-81d29d44221f,No,,,No
+Saanvi Reddy,saanvi.reddy@example.com,+91-8677065705,Attendee,407843db-379f-4146-8730-a53799e3b7f9,No,,,No
+Vivaan Mehta,vivaan.mehta@example.com,+91-7610480599,Speaker,8f9f459c-9794-4a08-9cb7-e8aeb4b01bd2,No,,,No
+Saanvi Gupta,saanvi.gupta@example.com,+91-7963956080,Attendee,789929eb-6fd6-48ce-a53b-af382b9283aa,No,,,No
+Rohan Singh,rohan.singh@example.com,+91-9869921325,Attendee,949010b5-038f-40fb-9b64-fa6c1dc8160c,No,,,No
+Saanvi Verma,saanvi.verma@example.com,+91-8168195388,Organizer,c4a12aa4-2a7e-40d2-b980-ac5e9361bad3,No,,,No
+Vivaan Gupta,vivaan.gupta@example.com,+91-8854088520,Organizer,ddbafb42-7362-4f7a-b4ec-c2f6882d565a,No,,,No
+Aarav Sharma,aarav.sharma@example.com,+91-8959889904,Speaker,aba0b66d-7960-4dec-8113-64e0bc6bfad7,No,,,No
+Rohan Sharma,rohan.sharma@example.com,+91-9664225026,Organizer,75ec1936-7d2f-4bf0-9e9e-2e14cee840fe,No,,,No
+Isha Singh,isha.singh@example.com,+91-9292636212,Attendee,b209658f-d037-4c64-9f10-96deefb8d491,No,,,No
+Meera Gupta,meera.gupta@example.com,+91-8250631108,Organizer,319de2bc-6f07-45bc-ba02-252041e567c4,No,,,No
+Arjun Mehta,arjun.mehta@example.com,+91-9323364808,Attendee,60efa696-1a0e-437c-8e58-b25879b6085d,No,,,No
+Anaya Nair,anaya.nair@example.com,+91-8748030036,Organizer,5594b0b5-4f50-4ad9-9626-aa541f368394,No,,,No
+Diya Nair,diya.nair@example.com,+91-9103264405,Organizer,8328e82f-b489-4091-aa1d-0f1c49b6c0cf,No,,,No
+Aarav Singh,aarav.singh@example.com,+91-9844949394,Attendee,24009532-1e50-48f9-a17c-e57e76e5819a,No,,,No
+Anaya Patel,anaya.patel@example.com,+91-9644643612,Organizer,da79efc3-952b-477d-96d3-7e221a24c609,No,,,No
+Meera Verma,meera.verma@example.com,+91-7655577721,Organizer,a770cf2d-9610-4ae1-ab47-2cd2ada8c832,No,,,No
+Anaya Verma,anaya.verma@example.com,+91-9613662937,Organizer,ccded0ae-91fb-4f11-8e56-539f3041b66b,No,,,No
+Kabir Kapoor,kabir.kapoor@example.com,+91-7746866189,Speaker,a38724a9-0a90-468e-888f-0e8c4b828c3a,No,,,No
+Isha Reddy,isha.reddy@example.com,+91-8479168034,Attendee,c120337c-daec-4cf7-b0d5-b51af4937bcc,No,,,No
+Arjun Patel,arjun.patel@example.com,+91-9521568963,Attendee,a0fdde94-c109-43a7-ae65-f8350ed47216,No,,,No
+Meera Kapoor,meera.kapoor@example.com,+91-7434666049,Organizer,cb48c62c-d19c-463d-817b-3c61ed55ab3d,No,,,No
+Isha Verma,isha.verma@example.com,+91-7980143247,Speaker,52a06b9d-3e5c-478a-8d83-42709f70f44e,No,,,No
+Vivaan Sharma,vivaan.sharma@example.com,+91-8142887791,Organizer,b5b610a4-678a-4df9-9615-1caff55a311e,No,,,No
+Vivaan Singh,vivaan.singh@example.com,+91-8529651113,Organizer,3d0656e8-2a66-4b03-8635-ede1504a44b7,No,,,No

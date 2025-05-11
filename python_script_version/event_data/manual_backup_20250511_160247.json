@@ -1,0 +1,312 @@
+{
+  "8e317ae2-c35f-4ebf-8a76-c92911c79d43": {
+    "name": "Meera Chopra",
+    "email": "meera.chopra@example.com",
+    "phone": "+91-8720078900",
+    "role": "Attendee",
+    "unique_id": "8e317ae2-c35f-4ebf-8a76-c92911c79d43",
+    "check_in_status": true,
+    "lunch_collected": [
+      "2025-05-11"
+    ],
+    "kit_collected": false,
+    "registration_time": "2025-05-11 08:54:39.596254"
+  },
+  "4971b372-8d8a-4dc3-906b-623e9b4bac4a": {
+    "name": "Meera Singh",
+    "email": "meera.singh@example.com",
+    "phone": "+91-8657775136",
+    "role": "Attendee",
+    "unique_id": "4971b372-8d8a-4dc3-906b-623e9b4bac4a",
+    "check_in_status": false,
+    "lunch_collected": [],
+    "kit_collected": false,
+    "registration_time": null
+  },
+  "e98325c4-80ed-4040-9866-e6368132f703": {
+    "name": "Kabir Gupta",
+    "email": "kabir.gupta@example.com",
+    "phone": "+91-7987222824",
+    "role": "Speaker",
+    "unique_id": "e98325c4-80ed-4040-9866-e6368132f703",
+    "check_in_status": true,
+    "lunch_collected": [],
+    "kit_collected": false,
+    "registration_time": "2025-05-11 15:34:08.267314"
+  },
+  "439257a9-5a22-4ec3-9a95-81d29d44221f": {
+    "name": "Arjun Reddy",
+    "email": "arjun.reddy@example.com",
+    "phone": "+91-8572751860",
+    "role": "Attendee",
+    "unique_id": "439257a9-5a22-4ec3-9a95-81d29d44221f",
+    "check_in_status": false,
+    "lunch_collected": [],
+    "kit_collected": false,
+    "registration_time": null
+  },
+  "407843db-379f-4146-8730-a53799e3b7f9": {
+    "name": "Saanvi Reddy",
+    "email": "saanvi.reddy@example.com",
+    "phone": "+91-8677065705",
+    "role": "Attendee",
+    "unique_id": "407843db-379f-4146-8730-a53799e3b7f9",
+    "check_in_status": false,
+    "lunch_collected": [],
+    "kit_collected": false,
+    "registration_time": null
+  },
+  "8f9f459c-9794-4a08-9cb7-e8aeb4b01bd2": {
+    "name": "Vivaan Mehta",
+    "email": "vivaan.mehta@example.com",
+    "phone": "+91-7610480599",
+    "role": "Speaker",
+    "unique_id": "8f9f459c-9794-4a08-9cb7-e8aeb4b01bd2",
+    "check_in_status": false,
+    "lunch_collected": [],
+    "kit_collected": false,
+    "registration_time": null
+  },
+  "789929eb-6fd6-48ce-a53b-af382b9283aa": {
+    "name": "Saanvi Gupta",
+    "email": "saanvi.gupta@example.com",
+    "phone": "+91-7963956080",
+    "role": "Attendee",
+    "unique_id": "789929eb-6fd6-48ce-a53b-af382b9283aa",
+    "check_in_status": false,
+    "lunch_collected": [],
+    "kit_collected": false,
+    "registration_time": null
+  },
+  "949010b5-038f-40fb-9b64-fa6c1dc8160c": {
+    "name": "Rohan Singh",
+    "email": "rohan.singh@example.com",
+    "phone": "+91-9869921325",
+    "role": "Attendee",
+    "unique_id": "949010b5-038f-40fb-9b64-fa6c1dc8160c",
+    "check_in_status": false,
+    "lunch_collected": [],
+    "kit_collected": false,
+    "registration_time": null
+  },
+  "c4a12aa4-2a7e-40d2-b980-ac5e9361bad3": {
+    "name": "Saanvi Verma",
+    "email": "saanvi.verma@example.com",
+    "phone": "+91-8168195388",
+    "role": "Organizer",
+    "unique_id": "c4a12aa4-2a7e-40d2-b980-ac5e9361bad3",
+    "check_in_status": false,
+    "lunch_collected": [],
+    "kit_collected": false,
+    "registration_time": null
+  },
+  "ddbafb42-7362-4f7a-b4ec-c2f6882d565a": {
+    "name": "Vivaan Gupta",
+    "email": "vivaan.gupta@example.com",
+    "phone": "+91-8854088520",
+    "role": "Organizer",
+    "unique_id": "ddbafb42-7362-4f7a-b4ec-c2f6882d565a",
+    "check_in_status": false,
+    "lunch_collected": [],
+    "kit_collected": false,
+    "registration_time": null
+  },
+  "aba0b66d-7960-4dec-8113-64e0bc6bfad7": {
+    "name": "Aarav Sharma",
+    "email": "aarav.sharma@example.com",
+    "phone": "+91-8959889904",
+    "role": "Speaker",
+    "unique_id": "aba0b66d-7960-4dec-8113-64e0bc6bfad7",
+    "check_in_status": false,
+    "lunch_collected": [],
+    "kit_collected": false,
+    "registration_time": null
+  },
+  "75ec1936-7d2f-4bf0-9e9e-2e14cee840fe": {
+    "name": "Rohan Sharma",
+    "email": "rohan.sharma@example.com",
+    "phone": "+91-9664225026",
+    "role": "Organizer",
+    "unique_id": "75ec1936-7d2f-4bf0-9e9e-2e14cee840fe",
+    "check_in_status": false,
+    "lunch_collected": [],
+    "kit_collected": false,
+    "registration_time": null
+  },
+  "b209658f-d037-4c64-9f10-96deefb8d491": {
+    "name": "Isha Singh",
+    "email": "isha.singh@example.com",
+    "phone": "+91-9292636212",
+    "role": "Attendee",
+    "unique_id": "b209658f-d037-4c64-9f10-96deefb8d491",
+    "check_in_status": false,
+    "lunch_collected": [],
+    "kit_collected": false,
+    "registration_time": null
+  },
+  "319de2bc-6f07-45bc-ba02-252041e567c4": {
+    "name": "Meera Gupta",
+    "email": "meera.gupta@example.com",
+    "phone": "+91-8250631108",
+    "role": "Organizer",
+    "unique_id": "319de2bc-6f07-45bc-ba02-252041e567c4",
+    "check_in_status": false,
+    "lunch_collected": [],
+    "kit_collected": false,
+    "registration_time": null
+  },
+  "60efa696-1a0e-437c-8e58-b25879b6085d": {
+    "name": "Arjun Mehta",
+    "email": "arjun.mehta@example.com",
+    "phone": "+91-9323364808",
+    "role": "Attendee",
+    "unique_id": "60efa696-1a0e-437c-8e58-b25879b6085d",
+    "check_in_status": false,
+    "lunch_collected": [],
+    "kit_collected": false,
+    "registration_time": null
+  },
+  "5594b0b5-4f50-4ad9-9626-aa541f368394": {
+    "name": "Anaya Nair",
+    "email": "anaya.nair@example.com",
+    "phone": "+91-8748030036",
+    "role": "Organizer",
+    "unique_id": "5594b0b5-4f50-4ad9-9626-aa541f368394",
+    "check_in_status": false,
+    "lunch_collected": [],
+    "kit_collected": false,
+    "registration_time": null
+  },
+  "8328e82f-b489-4091-aa1d-0f1c49b6c0cf": {
+    "name": "Diya Nair",
+    "email": "diya.nair@example.com",
+    "phone": "+91-9103264405",
+    "role": "Organizer",
+    "unique_id": "8328e82f-b489-4091-aa1d-0f1c49b6c0cf",
+    "check_in_status": false,
+    "lunch_collected": [],
+    "kit_collected": false,
+    "registration_time": null
+  },
+  "24009532-1e50-48f9-a17c-e57e76e5819a": {
+    "name": "Aarav Singh",
+    "email": "aarav.singh@example.com",
+    "phone": "+91-9844949394",
+    "role": "Attendee",
+    "unique_id": "24009532-1e50-48f9-a17c-e57e76e5819a",
+    "check_in_status": false,
+    "lunch_collected": [],
+    "kit_collected": false,
+    "registration_time": null
+  },
+  "da79efc3-952b-477d-96d3-7e221a24c609": {
+    "name": "Anaya Patel",
+    "email": "anaya.patel@example.com",
+    "phone": "+91-9644643612",
+    "role": "Organizer",
+    "unique_id": "da79efc3-952b-477d-96d3-7e221a24c609",
+    "check_in_status": false,
+    "lunch_collected": [],
+    "kit_collected": false,
+    "registration_time": null
+  },
+  "a770cf2d-9610-4ae1-ab47-2cd2ada8c832": {
+    "name": "Meera Verma",
+    "email": "meera.verma@example.com",
+    "phone": "+91-7655577721",
+    "role": "Organizer",
+    "unique_id": "a770cf2d-9610-4ae1-ab47-2cd2ada8c832",
+    "check_in_status": false,
+    "lunch_collected": [],
+    "kit_collected": false,
+    "registration_time": null
+  },
+  "ccded0ae-91fb-4f11-8e56-539f3041b66b": {
+    "name": "Anaya Verma",
+    "email": "anaya.verma@example.com",
+    "phone": "+91-9613662937",
+    "role": "Organizer",
+    "unique_id": "ccded0ae-91fb-4f11-8e56-539f3041b66b",
+    "check_in_status": false,
+    "lunch_collected": [],
+    "kit_collected": false,
+    "registration_time": null
+  },
+  "a38724a9-0a90-468e-888f-0e8c4b828c3a": {
+    "name": "Kabir Kapoor",
+    "email": "kabir.kapoor@example.com",
+    "phone": "+91-7746866189",
+    "role": "Speaker",
+    "unique_id": "a38724a9-0a90-468e-888f-0e8c4b828c3a",
+    "check_in_status": false,
+    "lunch_collected": [],
+    "kit_collected": false,
+    "registration_time": null
+  },
+  "c120337c-daec-4cf7-b0d5-b51af4937bcc": {
+    "name": "Isha Reddy",
+    "email": "isha.reddy@example.com",
+    "phone": "+91-8479168034",
+    "role": "Attendee",
+    "unique_id": "c120337c-daec-4cf7-b0d5-b51af4937bcc",
+    "check_in_status": false,
+    "lunch_collected": [],
+    "kit_collected": false,
+    "registration_time": null
+  },
+  "a0fdde94-c109-43a7-ae65-f8350ed47216": {
+    "name": "Arjun Patel",
+    "email": "arjun.patel@example.com",
+    "phone": "+91-9521568963",
+    "role": "Attendee",
+    "unique_id": "a0fdde94-c109-43a7-ae65-f8350ed47216",
+    "check_in_status": false,
+    "lunch_collected": [],
+    "kit_collected": false,
+    "registration_time": null
+  },
+  "cb48c62c-d19c-463d-817b-3c61ed55ab3d": {
+    "name": "Meera Kapoor",
+    "email": "meera.kapoor@example.com",
+    "phone": "+91-7434666049",
+    "role": "Organizer",
+    "unique_id": "cb48c62c-d19c-463d-817b-3c61ed55ab3d",
+    "check_in_status": false,
+    "lunch_collected": [],
+    "kit_collected": false,
+    "registration_time": null
+  },
+  "52a06b9d-3e5c-478a-8d83-42709f70f44e": {
+    "name": "Isha Verma",
+    "email": "isha.verma@example.com",
+    "phone": "+91-7980143247",
+    "role": "Speaker",
+    "unique_id": "52a06b9d-3e5c-478a-8d83-42709f70f44e",
+    "check_in_status": false,
+    "lunch_collected": [],
+    "kit_collected": false,
+    "registration_time": null
+  },
+  "b5b610a4-678a-4df9-9615-1caff55a311e": {
+    "name": "Vivaan Sharma",
+    "email": "vivaan.sharma@example.com",
+    "phone": "+91-8142887791",
+    "role": "Organizer",
+    "unique_id": "b5b610a4-678a-4df9-9615-1caff55a311e",
+    "check_in_status": false,
+    "lunch_collected": [],
+    "kit_collected": false,
+    "registration_time": null
+  },
+  "3d0656e8-2a66-4b03-8635-ede1504a44b7": {
+    "name": "Vivaan Singh",
+    "email": "vivaan.singh@example.com",
+    "phone": "+91-8529651113",
+    "role": "Organizer",
+    "unique_id": "3d0656e8-2a66-4b03-8635-ede1504a44b7",
+    "check_in_status": false,
+    "lunch_collected": [],
+    "kit_collected": false,
+    "registration_time": null
+  }
+}
