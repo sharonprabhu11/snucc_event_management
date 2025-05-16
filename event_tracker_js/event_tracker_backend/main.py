@@ -15,12 +15,12 @@ from database import get_db, engine
 import models
 import schemas
 
-# Create database tables
+
 models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI(title="Event Tracker API")
 
-# Enable CORS
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -29,31 +29,38 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Helper function to generate unique identifier
+
 def generate_identifier(length=8):
     chars = string.ascii_uppercase + string.digits
     return ''.join(random.choice(chars) for _ in range(length))
 
-# Helper function to generate QR code
-def generate_qr_code(data):
+
+def generate_qr_code(data, role="Attendee"):
+    
+    role_colors = {
+        "organiser": ("white", "darkblue"),
+        "speaker": ("black", "red"),
+        "attendee": ("black", "yellow")  
+    }
+
+    fill_color, back_color = role_colors.get(role.lower(), ("black", "white"))
+
     qr = qrcode.QRCode(
         version=1,
-        error_correction=qrcode.constants.ERROR_CORRECTION_L,
+        error_correction=qrcode.constants.ERROR_CORRECT_L,
         box_size=10,
         border=4,
     )
     qr.add_data(data)
     qr.make(fit=True)
-    
-    img = qr.make_image(fill_color="black", back_color="white")
-    
-    # Save to BytesIO
+
+    img = qr.make_image(fill_color=fill_color, back_color=back_color)
+
     buffer = io.BytesIO()
     img.save(buffer)
-    
-    # Convert to base64
     img_str = base64.b64encode(buffer.getvalue()).decode()
     return f"data:image/png;base64,{img_str}"
+
 
 @app.get("/")
 def read_root():
@@ -61,48 +68,69 @@ def read_root():
 
 @app.post("/upload-csv", response_model=schemas.AttendeeList)
 async def upload_csv(file: UploadFile = File(...), db: Session = Depends(get_db)):
-    # Check if the file is a CSV
+    
     if not file.filename.endswith('.csv'):
         raise HTTPException(status_code=400, detail="File must be a CSV")
     
-    # Read the CSV file
-    contents = await file.read()
-    decoded_content = contents.decode('utf-8')
-    csv_reader = csv.DictReader(io.StringIO(decoded_content))
-    
-    attendees = []
-    
-    for row in csv_reader:
-        # Check if email already exists
-        existing_attendee = db.query(models.Attendee).filter(models.Attendee.email == row.get('email')).first()
-        if existing_attendee:
-            continue
+    try:
+        contents = await file.read()
+        decoded_content = contents.decode('utf-8')
+        csv_reader = csv.DictReader(io.StringIO(decoded_content))
         
-        # Generate unique identifier
-        identifier = generate_identifier()
-        while db.query(models.Attendee).filter(models.Attendee.identifier == identifier).first():
+        attendees = []
+        skipped = 0
+        for row in csv_reader:
+            name = row.get('Name', '').strip()
+            email = row.get('Email', '').strip().lower()
+            phone = row.get('Phone', '').strip() if row.get('Phone') else None
+            role = row.get('Role', 'Attendee').strip()
+
+            if not name or not email:
+                continue
+
+            # Check for exact match
+            existing_attendee = db.query(models.Attendee).filter(
+                models.Attendee.email == email
+            ).first()
+
+            if existing_attendee:
+                skipped += 1
+                continue
+
             identifier = generate_identifier()
+            while db.query(models.Attendee).filter(
+                models.Attendee.identifier == identifier
+            ).first():
+                identifier = generate_identifier()
+
+            attendee = models.Attendee(
+                name=name,
+                email=email,
+                phone=phone,
+                role=role,
+                identifier=identifier,
+                registered=False,
+                lunch_collected=False,
+                kit_collected=False
+            )
+
+            db.add(attendee)
+            db.flush()
+            attendees.append(attendee)
+            
+            db.commit()
+
         
-        # Create new attendee
-        attendee = models.Attendee(
-            name=row.get('name'),
-            email=row.get('email'),
-            identifier=identifier,
-            registered=False,
-            lunch_collected=False,
-            kit_collected=False
-        )
-        
-        db.add(attendee)
-        attendees.append(attendee)
+        return {
+            "attendees": attendees,
+            "total_processed": len(attendees) + skipped,
+            "added": len(attendees),
+            "skipped": skipped
+        }
     
-    db.commit()
-    
-    # Generate QR codes for each attendee
-    for attendee in attendees:
-        db.refresh(attendee)
-    
-    return {"attendees": attendees}
+    except Exception as e:
+        db.rollback()
+        raise HTTPException(status_code=500, detail=f"Error processing CSV: {str(e)}")
 
 @app.get("/attendees", response_model=List[schemas.AttendeeResponse])
 def get_attendees(
@@ -136,9 +164,8 @@ def update_attendee(identifier: str, attendee_update: schemas.AttendeeUpdate, db
     if not db_attendee:
         raise HTTPException(status_code=404, detail="Attendee not found")
     
-    # Update fields if they are provided
+
     if attendee_update.registered is not None:
-        # If registering for the first time
         if attendee_update.registered and not db_attendee.registered:
             db_attendee.registration_time = datetime.now()
         db_attendee.registered = attendee_update.registered
@@ -159,8 +186,14 @@ def get_qrcode(identifier: str, db: Session = Depends(get_db)):
     if not attendee:
         raise HTTPException(status_code=404, detail="Attendee not found")
     
-    qr_code = generate_qr_code(identifier)
-    return {"identifier": identifier, "qr_code": qr_code}
+    qr_code = generate_qr_code(identifier, attendee.role)
+    return {
+        "identifier": identifier,
+        "name": attendee.name,
+        "role": attendee.role,
+        "qr_code": qr_code
+    }
+
 
 @app.get("/stats", response_model=schemas.StatsResponse)
 def get_stats(db: Session = Depends(get_db)):
