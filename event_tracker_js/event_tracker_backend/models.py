@@ -10,6 +10,8 @@ class Attendee(Base):
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String, index=True)
     email = Column(String, unique=True, index=True)
+    phone = Column(String, index=True)
+    role = Column(String, index=True)
     identifier = Column(String, unique=True, index=True)
     registered = Column(Boolean, default=False)
     lunch_collected = Column(Boolean, default=False)
@@ -21,6 +23,8 @@ class Attendee(Base):
             "id": self.id,
             "name": self.name,
             "email": self.email,
+            "phone": self.phone,
+            "role": self.role,
             "identifier": self.identifier,
             "registered": self.registered,
             "lunch_collected": self.lunch_collected,

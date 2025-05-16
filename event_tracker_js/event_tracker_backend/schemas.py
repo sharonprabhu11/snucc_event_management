@@ -5,6 +5,9 @@ from datetime import datetime
 class AttendeeBase(BaseModel):
     name: str
     email: str
+    phone: str
+    role: str
+    
 
 class AttendeeCreate(AttendeeBase):
     pass
