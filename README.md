@@ -8,5 +8,5 @@
 - To run the Javascript version, cd into event_tracker_js:
   1) cd into event_tracker_frontend: `npm install` then `npm run dev`
   2) cd into event_tracker_backend: `pip install -r requirements.txt` then ` uvicorn main:app --reload`
-  UI will be available on http://localhost:5173/
-  Can check if backend is working on http://localhost:8000/docs
+  3) UI will be available on http://localhost:5173/
+  4) Can check if backend is working on http://localhost:8000/docs
